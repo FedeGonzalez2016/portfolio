@@ -39,6 +39,7 @@ h1 {
 .presentacion {
     color:gray;
     background-color: black;
+    border-radius: 15px;
 }
 
 a {
@@ -230,5 +231,15 @@ footer {
 
     .proyectos {
         grid-template-columns: auto;
+    }
+
+    h1{
+        text-align: center;
+        text-align: justify;
+    }
+
+    .presentacion{
+        text-align: center;
+        text-align: justify;
     }
 }
