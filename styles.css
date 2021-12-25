@@ -99,6 +99,15 @@ ul {
 
 }
 
+.menu-btn {
+    position:absolute;
+    cursor: pointer;
+    top: 30px;
+    right: 30px;
+    font-size: 2rem;
+    display: none;
+}
+
 .nav-main ul li a:hover {
 
     border-bottom: 5px solid gray;
@@ -201,7 +210,17 @@ footer {
         height: 100%;
         padding: 30px;
         opacity: .9;
-        transform: translate(-20px);
+        transform: translate(-400px);
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px)
+    }
+
+    .menu-btn {
+
+        display:block;
+
     }
 
     .nav-main ul.nav-menu li {
