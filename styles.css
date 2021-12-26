@@ -50,7 +50,6 @@ h1 {
 
 a {
 
-    color: gray; /*Color de fondo de los links*/
     text-decoration: none; /*Sacar subrayado de los links*/
 
 }
@@ -172,7 +171,6 @@ hr {
 .proyectos a {
     padding: 10px 0px;
     color: #22269E;
-    text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
 }
@@ -224,27 +222,6 @@ footer {
 
 @media (max-width: 975px) {
 
-    .nav-main ul.nav-menu {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: black;
-        height: 100%;
-        padding: 30px;
-        opacity: .9;
-        transform: translate(-400px);
-    }
-
-    .nav-main ul.nav-menu.show {
-        transform: translateX(-20px)
-    }
-
-    .nav-main ul.nav-menu li {
-        padding: 20px;
-        font-size: 18px;
-    }
-
     .proyectos {
         grid-template-columns: auto;
     }
@@ -256,5 +233,32 @@ footer {
     .presentacion{
         width: auto;
         text-align: center;
+    }
+
+    .nav-main {
+        height: 150px;
+    }
+
+    .logo {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        width: 100px;
+
+    }
+
+    .nav-main ul {
+        display: none;
+    }
+
+    h3 {
+        text-align: center;
+
+    }
+    
+    .visitar {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
     }
 }
