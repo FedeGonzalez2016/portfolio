@@ -98,24 +98,23 @@ ul {
 /*Elemento nav alineado a la izquierda*/
 
 .nav-main ul {
-
     display: flex;
-
 }
 
 .nav-main ul li {
-
     margin-top: 50px;
     padding: 50px;
-
 }
 
-.menu-btn {
-    position:absolute;
+.nav-toggle {
+    color: #8849FF;
+    background: none;
+    border: none;
+    font-size: 30px;
+    margin-top: 40px;
+    padding: 50px;
     cursor: pointer;
-    top: 30px;
-    right: 30px;
-    font-size: 2rem;
+
     display: none;
 }
 
@@ -125,11 +124,6 @@ ul {
 
 }
 
-hr {
-
-    margin: 40px 0px;
-
-}
 /*Imagen principal*/
 
 .imagen-principal {
@@ -238,6 +232,40 @@ footer {
     .nav-main {
         height: 150px;
     }
+    .nav-menu {
+        flex-direction: column;
+        background-color: #8849FF;
+        align-items: center;
+        opacity: 0.9;
+        position: fixed;
+        left: 0;
+        top: 150px;
+        width: 100%;
+        padding: 5px 0;
+
+        height: calc(100% - 150px); /*SI LOS DISPOSITIVOS TIENEN MUCHA ALTURA, ESTE CALCULO LLEGARA HASTA EL TOPE INFERIOR*/
+        overflow-y: auto; /*SI LA PANTALLA DEL DISPOSITIVO ES MUY PEQUEÑA, ESTE ATRIBUTO AGREGARA UN SCROLL VERTICAL PARA PODER ACCEDER A TODAS LAS SECCIONES DEL NAV*/
+        left: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .nav-menu-item {
+        color: black;
+        font-weight:bold;
+        line-height: 10px;
+    }
+
+    .nav-menu-item:hover {
+        color: #22269E;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
 
     .logo {
         margin-top: 30px;
@@ -245,10 +273,6 @@ footer {
         margin-left: 30px;
         width: 100px;
 
-    }
-
-    .nav-main ul {
-        display: none;
     }
 
     h3 {
