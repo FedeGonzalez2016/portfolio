@@ -12,36 +12,43 @@
     <!-- Enlace Css-->
     <link rel="stylesheet" href="styles.css">
 </head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Utilizamos font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--Font weasome fuente roboto-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <!-- Enlace Css-->
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-
-    <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-    </div>
-
-    <!-- div con clase container, para centrar el contenido de la misma-->
-    <div class="container">
+    <header>
         <!-- Menu de navegacion principal-->
         <nav class="nav-main">
             <img src="img/logo.jpg" alt="Portfolio Logo" class="logo">
             <ul class="nav-menu">
                 <li>
-                    <a href="https://portafoliofg.netlify.app/">INICIO</a>
+                    <a class="nav-menu-item" href="https://portafoliofg.netlify.app/">INICIO</a>
                 </li>
                 <li>
-                    <a href="#sobremi">SOBRE MI</a>
+                    <a class="nav-menu-item" href="#sobremi">SOBRE MI</a>
                 </li>
                 <li>
-                    <a href="#portafolio">PORTFOLIO</a>
+                    <a class="nav-menu-item" href="#portafolio">PORTAFOLIO</a>
                 </li>
                 <li>
-                    <a href="#contacto">CONTACTO</a>
+                    <a class="nav-menu-item" href="#contacto">CONTACTO</a>
                 </li>
-
+                <li>
+                </li>
             </ul>
         </nav>
-        
-
-    </div>
+    </header>
 
     <br>
     <hr id="hr-space">
@@ -51,7 +58,7 @@
 
         <!--Imagen principal-->
         <header class="imagen-principal">
-            <h1>BIENVENIDOS A MI WEB</h1>
+            <h1>BIENVENIDOS A MI PORTAFOLIO</h1>
             <p class="presentacion"><strong>Mi nombre es Federico Gonzalez. Y soy Fullstack Developer</strong></p>
         </header>
 
@@ -76,21 +83,21 @@
            
             <div>
                 <img src="img/card2.png" alt="portafolio">
-                <h3>Portafolio Online</h3>
+                <h3 class="subtitulo">PORTAFOLIO ONLINE</h3>
                 <p>Portafolio de trabajos realizados. Desarrollado con Html y Css.</p>
-                <a href="https://portafoliofg.netlify.app/">Visitar Sitio<i class="fas fa-angle-double-right"></i></a>
+                <a class="visitar" href="https://portafoliofg.netlify.app/">Visitar Sitio<i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="img/card1.jpg" alt="conversor">
-                <h3>Conversor de Unidades Online</h3>
+                <h3 class="subtitulo">CONVERSOR DE UNIDADES</h3>
                 <p>Sitio Web Responsive destinado para la conversion de unidades de diferentes indoles. Desarrollado con Html, Css y Javascript</p>
-                <a href="https://conversorfg.netlify.app/">Visitar Sitio <i class="fas fa-angle-double-right"></i></a>
+                <a class="visitar" href="https://conversorfg.netlify.app/">Visitar Sitio <i class="fas fa-angle-double-right"></i></a>
             </div>
             <div>
                 <img src="img/card3.jpg" alt="crud">
-                <h3>Base de datos Medicina Prepaga</h3>
+                <h3 class="subtitulo">CRUD MEDICINA PRIVADA</h3>
                 <p>Base de datos y programa de una clinica, creado para gestionar informacion de los pacientes de la misma. Desarrollado con Html, PHP 7 y Bootstrap 5</p>
-                <a href="https://github.com/FedeGonzalez2016/CRUD/tree/master">Visitar Sitio<i class="fas fa-angle-double-right"></i></a>
+                <a class="visitar" href="https://github.com/FedeGonzalez2016/CRUD/tree/master">Visitar Sitio<i class="fas fa-angle-double-right"></i></a>
             </div>
         </div>
 
